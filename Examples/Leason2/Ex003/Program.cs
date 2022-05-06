@@ -1,36 +1,42 @@
 ﻿// Я не понял тему про методы. Не понял чем они отличаются от написания кода без метода, для чего они нужны и как они вообще оформляются. Так же не понял что такое return и для чего это вообще нужно. Я пересмотрел лекцию дважды. Ничего не понял.
 // Вот прикрепляю Метод который я написал. Он не работает и я не знаю почему. Ниже прикрепляю рабочий код для выполнения той же самой задачи. Подправьте в комментарии пожалуйста, не понимаю что сделал не так.
-//int GetNumber()
+
+
+
+int GetNumber(int a, int b);
+{
+    int a = 34;
+    int b = 5;
+
+    if (a % b == 0)
+    {
+        Console.WriteLine("Да, кратное");
+    }
+    else
+    {
+        int o = (a % b);
+        Console.Write("Нет, Не кратное. Остаток:");
+        Console.Write(o);
+    }
+    return (o);
+}
+Console.WriteLine(GetNumber());
+
+//int a = 34;
+//int b = 5;
+
+//void Mod(int a, int b);
+//int o = 0;
+
+//if (a % b == 0)
 //{
-//    int a = 34;
-//    int b = 5;
-//   int o = 0;
-//
-//    if (a % b == 0)
-//    {
-//        Console.WriteLine("Да, кратное");
-//    }
-//    else
-//    {
-//        int o = (a % b);
-//        Console.Write("Нет, Не кратное. Остаток:");
-//        Console.Write(o);
-//    }
-//    return (o);
+//    Console.WriteLine("Да, кратное");
 //}
-//Console.WriteLine(GetNumber());
-
-
-int a = 34;
-int b = 5;
-
-if (a % b == 0)
-{
-    Console.WriteLine("Да, кратное");
-}
-else
-{
-    int c = (a % b);
-    Console.Write("Нет, Не кратное. Остаток:");
-    Console.Write(c);
-}
+//else
+//{
+//    o = a % b;
+//    Console.Write("Нет, Не кратное. Остаток:");
+//    Console.Write(o);
+//}
+//
+//Mod(a, b);

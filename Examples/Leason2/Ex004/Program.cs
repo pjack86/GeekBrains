@@ -1,18 +1,17 @@
-﻿//Тут опять не сделал метод потому что не понимаю как их делать. Я не понял что выполняет return. Вот рабочий код на выполнение задачи.
+﻿string Mod(int a, int b)
+{
+    if (a % b == 0)
+    {
+        return ("Да, кратное");
+    }
+    else
+    {
+        int o = (a % b);
+        return ($"Нет, Не кратное. Остаток: {o}");
+    }
+}
+int a = 34;
+int b = 5;
 
-int a = 16;
-int b = 7;
-int c = 23;
-
-if (a % b > 0)
-{
-    Console.WriteLine("Нет");
-}
-else if (a % c > 0)
-{
-    Console.WriteLine("Нет");
-}
-else
-{
-    Console.WriteLine("Да");
-}
+string result = Mod(a, b);
+Console.Write(result);
