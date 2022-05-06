@@ -14,4 +14,4 @@ int a = 34;
 int b = 5;
 
 string result = Mod(a, b);
-Console.Write(result);
+Console.WriteLine(result);
