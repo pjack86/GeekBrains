@@ -15,4 +15,3 @@ double Method(double x1, double y1, double z1, double x2, double y2, double z2)
 }
 double c = Method(3, 6, 8, 2, 1, -7);
 Console.WriteLine(c);
-
